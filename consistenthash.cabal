@@ -1,0 +1,23 @@
+Author:        Evan Klitzke
+Maintainer:    Evan Klitzke <evan@eklitzke.org>
+Name:          consistenthash
+Version:       0.1.0
+Cabal-Version: >= 1.2
+License:       BSD3
+License-File:  LICENSE
+Category:      Data
+Copyright:     (c) 2009 by Evan Klitzke
+Synopsis:      A consistent hashing implementation
+Description:
+  This module implements a consistent hashing interface. This is a technique for
+  minimizing the amount of churn in a distributed hash system when a single hash
+  node/slot is added or removed to the system.
+ 
+Build-Type: Simple
+Extra-Source-Files:
+    README.md
+    LICENSE
+ 
+Library
+  Exposed-Modules: Data.ConsistentHash Data.ConsistentHash.HashFunc
+  Build-Depends: base, array, Crypto
